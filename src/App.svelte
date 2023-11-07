@@ -102,39 +102,39 @@
     padding: 30px;
   }
 
-  .border-3,
-  .border-4,
-  .border-5,
-  .border-6,
-  .border-7,
-  .border-8 {
+  main > div > div > div.active.border-3,
+  main > div > div > div.active.border-4,
+  main > div > div > div.active.border-5,
+  main > div > div > div.active.border-6,
+  main > div > div > div.active.border-7,
+  main > div > div > div.active.border-8 {
     border-top: 4px solid #fff;
   }
 
-  .border-0,
-  .border-1,
-  .border-3,
-  .border-4,
-  .border-6,
-  .border-7 {
+  main > div > div > div.active.border-0,
+  main > div > div > div.active.border-1,
+  main > div > div > div.active.border-3,
+  main > div > div > div.active.border-4,
+  main > div > div > div.active.border-6,
+  main > div > div > div.active.border-7 {
     border-right: 4px solid #fff;
   }
 
-  .border-0,
-  .border-1,
-  .border-2,
-  .border-3,
-  .border-4,
-  .border-5 {
+  main > div > div > div.active.border-0,
+  main > div > div > div.active.border-1,
+  main > div > div > div.active.border-2,
+  main > div > div > div.active.border-3,
+  main > div > div > div.active.border-4,
+  main > div > div > div.active.border-5 {
     border-bottom: 4px solid #fff;
   }
 
-  .border-1,
-  .border-2,
-  .border-4,
-  .border-5,
-  .border-7,
-  .border-8 {
+  main > div > div > div.active.border-1,
+  main > div > div > div.active.border-2,
+  main > div > div > div.active.border-4,
+  main > div > div > div.active.border-5,
+  main > div > div > div.active.border-7,
+  main > div > div > div.active.border-8 {
     border-left: 4px solid #fff;
   }
 
