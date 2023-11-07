@@ -6,11 +6,11 @@
 
 <main>
   <Title />
-  <h1>Hello {name}!</h1>
+  <!-- <h1>Hello {name}!</h1>
   <p>
     Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn
     how to build Svelte apps.
-  </p>
+  </p> -->
 </main>
 
 <style>
@@ -19,6 +19,9 @@
     padding: 1em;
     max-width: 240px;
     margin: 0 auto;
+    background-color: #1f1f1f;
+    display: flex;
+    justify-content: center;
   }
 
   h1 {
