@@ -102,39 +102,39 @@
     padding: 30px;
   }
 
-  main > div > div > div.active.border-3,
-  main > div > div > div.active.border-4,
-  main > div > div > div.active.border-5,
-  main > div > div > div.active.border-6,
-  main > div > div > div.active.border-7,
-  main > div > div > div.active.border-8 {
+  main > div > div > div.border-3,
+  main > div > div > div.border-4,
+  main > div > div > div.border-5,
+  main > div > div > div.border-6,
+  main > div > div > div.border-7,
+  main > div > div > div.border-8 {
     border-top: 4px solid #fff;
   }
 
-  main > div > div > div.active.border-0,
-  main > div > div > div.active.border-1,
-  main > div > div > div.active.border-3,
-  main > div > div > div.active.border-4,
-  main > div > div > div.active.border-6,
-  main > div > div > div.active.border-7 {
+  main > div > div > div.border-0,
+  main > div > div > div.border-1,
+  main > div > div > div.border-3,
+  main > div > div > div.border-4,
+  main > div > div > div.border-6,
+  main > div > div > div.border-7 {
     border-right: 4px solid #fff;
   }
 
-  main > div > div > div.active.border-0,
-  main > div > div > div.active.border-1,
-  main > div > div > div.active.border-2,
-  main > div > div > div.active.border-3,
-  main > div > div > div.active.border-4,
-  main > div > div > div.active.border-5 {
+  main > div > div > div.border-0,
+  main > div > div > div.border-1,
+  main > div > div > div.border-2,
+  main > div > div > div.border-3,
+  main > div > div > div.border-4,
+  main > div > div > div.border-5 {
     border-bottom: 4px solid #fff;
   }
 
-  main > div > div > div.active.border-1,
-  main > div > div > div.active.border-2,
-  main > div > div > div.active.border-4,
-  main > div > div > div.active.border-5,
-  main > div > div > div.active.border-7,
-  main > div > div > div.active.border-8 {
+  main > div > div > div.border-1,
+  main > div > div > div.border-2,
+  main > div > div > div.border-4,
+  main > div > div > div.border-5,
+  main > div > div > div.border-7,
+  main > div > div > div.border-8 {
     border-left: 4px solid #fff;
   }
 
