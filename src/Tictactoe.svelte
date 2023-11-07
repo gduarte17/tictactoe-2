@@ -51,7 +51,7 @@
         let winnerBadge = document.createElement("p");
         winnerBadge.setAttribute("id", "winner-badge");
         winnerBadge.innerText += winner;
-        document.querySelector(".game").appendChild(winnerBadge);
+        document.querySelector(`.game-${megaIndex}`).appendChild(winnerBadge);
         return;
       }
     }
