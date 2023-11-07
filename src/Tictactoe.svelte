@@ -50,6 +50,8 @@
         document.querySelector(`.game-${megaIndex}`).innerHTML = "";
         let winnerBadge = document.createElement("p");
         winnerBadge.setAttribute("class", "winner-badge");
+        winnerBadge.style.fontSize = "70px";
+        winnerBadge.style.fontWeight = "700";
         winnerBadge.innerText += winner;
         document.querySelector(`.game-${megaIndex}`).appendChild(winnerBadge);
         return;
@@ -148,9 +150,4 @@
   .border-8 {
     border-left: 3px solid #fff;
   } */
-
-  .winner-badge {
-    font-size: 70px;
-    font-weight: 700;
-  }
 </style>

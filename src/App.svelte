@@ -147,6 +147,10 @@
     opacity: 0.25;
   }
 
+  .inactive .winner-badge {
+    opacity: 1;
+  }
+
   /* h1 {
     color: #ff3e00;
     text-transform: uppercase;
