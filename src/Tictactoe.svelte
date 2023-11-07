@@ -49,7 +49,7 @@
         winner = board[a]; // Definir o vencedor
         document.querySelector(`.game-${megaIndex}`).innerHTML = "";
         let winnerBadge = document.createElement("p");
-        winnerBadge.setAttribute("id", "winner-badge");
+        winnerBadge.setAttribute("class", "winner-badge");
         winnerBadge.innerText += winner;
         document.querySelector(`.game-${megaIndex}`).appendChild(winnerBadge);
         return;
@@ -131,7 +131,7 @@
     border-right: 3px solid #fff;
   }
 
-  .border-0,
+  /* .border-0,
   .border-1,
   .border-2,
   .border-3,
@@ -147,9 +147,10 @@
   .border-7,
   .border-8 {
     border-left: 3px solid #fff;
-  }
+  } */
 
-  #winner-badge {
+  .winner-badge {
     font-size: 70px;
+    font-weight: 700;
   }
 </style>
