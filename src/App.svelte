@@ -102,6 +102,51 @@
     padding: 30px;
   }
 
+  .border-3,
+  .border-4,
+  .border-5,
+  .border-6,
+  .border-7,
+  .border-8 {
+    border-top: 4px solid #fff;
+  }
+
+  .border-0,
+  .border-1,
+  .border-3,
+  .border-4,
+  .border-6,
+  .border-7 {
+    border-right: 4px solid #fff;
+  }
+
+  .border-0,
+  .border-1,
+  .border-2,
+  .border-3,
+  .border-4,
+  .border-5 {
+    border-bottom: 4px solid #fff;
+  }
+
+  .border-1,
+  .border-2,
+  .border-4,
+  .border-5,
+  .border-7,
+  .border-8 {
+    border-left: 4px solid #fff;
+  }
+
+  /* .active {
+    background-color: red;
+  } */
+
+  .inactive {
+    pointer-events: none;
+    opacity: 0.4;
+  }
+
   /* h1 {
     color: #ff3e00;
     text-transform: uppercase;
