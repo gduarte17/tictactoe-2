@@ -86,6 +86,22 @@
     justify-content: center;
   }
 
+  .mega-game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+  }
+
+  .mega-tictactoe-grid {
+    display: grid;
+    grid-template: 32% 32% 32% / 32% 32% 32%;
+  }
+
+  .mega-tictactoe-grid > div {
+    padding: 30px;
+  }
+
   /* h1 {
     color: #ff3e00;
     text-transform: uppercase;
