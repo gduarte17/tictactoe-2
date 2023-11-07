@@ -47,7 +47,7 @@
       const [a, b, c] = combination;
       if (board[a] && board[a] === board[b] && board[a] === board[c]) {
         winner = board[a]; // Definir o vencedor
-        document.querySelector(".game").innerHTML = "";
+        document.querySelector(`.game .${megaIndex}`).innerHTML = "";
         let winnerBadge = document.createElement("p");
         winnerBadge.setAttribute("id", "winner-badge");
         winnerBadge.innerText += winner;
@@ -62,7 +62,7 @@
     }
   }
 
-  //   export let megaIndex;
+  export let megaIndex;
 
   // Função para reiniciar o jogo
   function resetGame() {
@@ -73,7 +73,7 @@
 </script>
 
 <!-- A interface do jogo -->
-<div class="game">
+<div class="game {megaIndex}">
   <!-- <h1>{megaIndex}</h1> -->
   <div class="tictactoe-grid">
     {#each board as cell, index}
@@ -147,5 +147,9 @@
   .border-7,
   .border-8 {
     border-left: 3px solid #fff;
+  }
+
+  #winner-badge {
+    font-size: 70px;
   }
 </style>
