@@ -144,7 +144,7 @@
 
   .inactive {
     pointer-events: none;
-    opacity: 0.4;
+    opacity: 0.25;
   }
 
   /* h1 {

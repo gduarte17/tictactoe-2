@@ -47,6 +47,11 @@
       const [a, b, c] = combination;
       if (board[a] && board[a] === board[b] && board[a] === board[c]) {
         winner = board[a]; // Definir o vencedor
+        document.querySelector(".game").innerHTML = "";
+        let winnerBadge = document.createElement("p");
+        winnerBadge.setAttribute("id", "winner-badge");
+        winnerBadge.innerText += winner;
+        document.querySelector(".game").appendChild(winnerBadge);
         return;
       }
     }
