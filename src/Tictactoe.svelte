@@ -47,7 +47,7 @@
       const [a, b, c] = combination;
       if (board[a] && board[a] === board[b] && board[a] === board[c]) {
         winner = board[a]; // Definir o vencedor
-        document.querySelector(`.game .${megaIndex}`).innerHTML = "";
+        document.querySelector(`.game-${megaIndex}`).innerHTML = "";
         let winnerBadge = document.createElement("p");
         winnerBadge.setAttribute("id", "winner-badge");
         winnerBadge.innerText += winner;
@@ -73,7 +73,7 @@
 </script>
 
 <!-- A interface do jogo -->
-<div class="game {megaIndex}">
+<div class="game-{megaIndex}">
   <!-- <h1>{megaIndex}</h1> -->
   <div class="tictactoe-grid">
     {#each board as cell, index}
