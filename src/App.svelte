@@ -1,5 +1,5 @@
 <script>
-  import Tictactoe from "./Tictactoe.svelte";
+  import Mega_Tictactoe from "./Mega_Tictactoe.svelte";
   import Title from "./Title.svelte";
 
   //   export let name;
@@ -7,7 +7,7 @@
 
 <main>
   <Title />
-  <Tictactoe />
+  <Mega_Tictactoe />
   <!-- <h1>Hello {name}!</h1>
   <p>
     Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn
@@ -22,6 +22,7 @@
     max-width: 240px;
     margin: 0 auto;
     display: flex;
+    flex-direction: column;
     justify-content: center;
   }
 
