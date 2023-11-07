@@ -1,5 +1,6 @@
 <script>
   import Mega_Tictactoe from "./Mega_Tictactoe.svelte";
+  import Tictactoe from "./Tictactoe.svelte";
   import Title from "./Title.svelte";
 
   //   export let name;
