@@ -52,6 +52,7 @@
         winnerBadge.setAttribute("class", "winner-badge");
         winnerBadge.style.fontSize = "70px";
         winnerBadge.style.fontWeight = "700";
+        winnerBadge.style.color = winner == "X" ? "#0070ff" : "#ff3c3c";
         winnerBadge.innerText += winner;
         document.querySelector(`.game-${megaIndex}`).appendChild(winnerBadge);
         return;
