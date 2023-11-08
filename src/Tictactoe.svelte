@@ -50,7 +50,7 @@
 
         document.querySelector(
           `.mega-tictactoe-grid > .border-${megaIndex}`
-        ).classList += "completed";
+        ).classList += " completed";
         // document.querySelector(`.game-${megaIndex}`).classList += "completed";
         document.querySelector(`.game-${megaIndex}`).innerHTML = "";
         let winnerBadge = document.createElement("p");
