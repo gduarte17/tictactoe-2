@@ -48,9 +48,7 @@
       if (board[a] && board[a] === board[b] && board[a] === board[c]) {
         winner = board[a]; // Definir o vencedor
 
-        document.querySelector(
-          `.border-${megaIndex}.svelte-1f4rfnf`
-        ).classList += " completed";
+        dispatch("gameCompleted", megaIndex);
         // document.querySelector(`.game-${megaIndex}`).classList += "completed";
         document.querySelector(`.game-${megaIndex}`).innerHTML = "";
         let winnerBadge = document.createElement("p");

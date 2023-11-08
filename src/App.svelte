@@ -35,6 +35,13 @@
     }
   }
 
+  function gameCompleted(event) {
+    document.querySelector(
+      `.border-${event.detail}.svelte-1f4rfnf`
+    ).classList += " completed";
+    console.log("done");
+  }
+
   // Função para reiniciar o jogo
   function resetGame() {
     board = Array(9).fill("");
@@ -56,6 +63,7 @@
           <Tictactoe
             {currentPlayer}
             on:whereNext_Updated={define_whereNext}
+            on:gameCompleted={gameCompleted}
             megaIndex={index}
           />
         </div>
