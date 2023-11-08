@@ -49,7 +49,7 @@
         winner = board[a]; // Definir o vencedor
 
         document.querySelector(
-          `.mega-tictactoe-grid > .border-${megaIndex}`
+          `.border-${megaIndex}.svelte-1f4rfnf`
         ).classList += " completed";
         // document.querySelector(`.game-${megaIndex}`).classList += "completed";
         document.querySelector(`.game-${megaIndex}`).innerHTML = "";
