@@ -47,14 +47,19 @@
       const [a, b, c] = combination;
       if (board[a] && board[a] === board[b] && board[a] === board[c]) {
         winner = board[a]; // Definir o vencedor
+
+        document.querySelector(
+          `.mega-tictactoe-grid .border-${megaIndex}`
+        ).classList += "completed";
+        // document.querySelector(`.game-${megaIndex}`).classList += "completed";
         document.querySelector(`.game-${megaIndex}`).innerHTML = "";
         let winnerBadge = document.createElement("p");
-        winnerBadge.setAttribute("class", "winner-badge");
         winnerBadge.style.fontSize = "70px";
         winnerBadge.style.fontWeight = "700";
         winnerBadge.style.color = winner == "X" ? "#0070ff" : "#ff3c3c";
         winnerBadge.innerText += winner;
         document.querySelector(`.game-${megaIndex}`).appendChild(winnerBadge);
+
         return;
       }
     }
@@ -134,21 +139,7 @@
     border-right: 3px solid #fff;
   }
 
-  /* .border-0,
-  .border-1,
-  .border-2,
-  .border-3,
-  .border-4,
-  .border-5 {
-    border-bottom: 3px solid #fff;
+  .completed {
+    opacity: 0.25;
   }
-
-  .border-1,
-  .border-2,
-  .border-4,
-  .border-5,
-  .border-7,
-  .border-8 {
-    border-left: 3px solid #fff;
-  } */
 </style>
