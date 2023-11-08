@@ -68,6 +68,13 @@
           />
         </div>
       {/each}
+      <p>
+        é a vez de <span
+          style="font-size: 70px; font-weight: 700; color: {currentPlayer == 'X'
+            ? '#0070ff'
+            : '#ff3c3c'}">{{ currentPlayer }}</span
+        >
+      </p>
     </div>
     {#if winner}
       <p>{winner === "Empate" ? "Empate!" : `Vencedor: ${winner}`}</p>
@@ -84,7 +91,7 @@
 <style>
   main {
     text-align: center;
-    padding: 1em;
+    /* padding: 1em; */
     max-width: 240px;
     margin: 0 auto;
     display: flex;
@@ -101,7 +108,7 @@
 
   .mega-tictactoe-grid {
     display: grid;
-    grid-template: 32% 32% 32% / 32% 32% 32%;
+    grid-template: 33% 34% 33% / 33% 34% 33%;
   }
 
   .mega-tictactoe-grid > div {
@@ -150,7 +157,7 @@
 
   .inactive {
     pointer-events: none;
-    opacity: 0.25;
+    /* opacity: 0.25; */
   }
 
   /* h1 {
