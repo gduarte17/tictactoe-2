@@ -69,10 +69,9 @@
         </div>
       {/each}
     </div>
-    <p>
+    <p style="position: absolute; right: 5%;">
       é a vez de <span
-        style="font-size: 70px; font-weight: 700; position: absolute; right: 5%; color: {currentPlayer ==
-        'X'
+        style="font-size: 70px; font-weight: 700; color: {currentPlayer == 'X'
           ? '#0070ff'
           : '#ff3c3c'}">{currentPlayer}</span
       >
