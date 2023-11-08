@@ -71,7 +71,8 @@
     </div>
     <p style="position: absolute; right: 5%;">
       é a vez de <span
-        style="font-size: 70px; font-weight: 700; color: {currentPlayer == 'X'
+        style="font-size: 70px; font-weight: 700; vertical-align: middle; padding-left: 10px; color: {currentPlayer ==
+        'X'
           ? '#0070ff'
           : '#ff3c3c'}">{currentPlayer}</span
       >
