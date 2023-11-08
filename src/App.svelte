@@ -28,11 +28,9 @@
   function define_isActive(WN_Value, elementIndex) {
     if (WN_Value != "") {
       elementIndex == WN_Value ? (isActive = true) : (isActive = false);
-      console.log(isActive, WN_Value, elementIndex);
       return isActive;
     } else if (WN_Value == "") {
       isActive = true;
-      console.log(WN_Value);
       return isActive;
     }
   }
