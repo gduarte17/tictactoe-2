@@ -36,11 +36,11 @@
   }
 
   function gameCompleted(event) {
+    console.log(event.detail, typeof event.detail);
     document.querySelector(
       `.border-${event.detail}.svelte-1f4rfnf`
     ).classList += " completed";
     console.log("done");
-    console.log(event.detail, typeof event.detail);
   }
 
   // Função para reiniciar o jogo
