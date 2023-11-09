@@ -35,12 +35,12 @@
     }
   }
 
-  function gameCompleted(event) {
-    document.querySelector(
-      `.border-${event.detail}.svelte-1f4rfnf`
-    ).classList += " completed";
-    console.log("done");
-  }
+  // function gameCompleted(event) {
+  //   document.querySelector(
+  //     `.border-${event.detail}.svelte-1f4rfnf`
+  //   ).classList += " completed";
+  //   console.log("done");
+  // }
 
   // Função para reiniciar o jogo
   function resetGame() {
