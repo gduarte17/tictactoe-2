@@ -35,12 +35,13 @@
     }
   }
 
-  // function gameCompleted(event) {
-  //   document.querySelector(
-  //     `.border-${event.detail}.svelte-1f4rfnf`
-  //   ).classList += " completed";
-  //   console.log("done");
-  // }
+  function gameCompleted(event) {
+    document.querySelector(
+      `.border-${event.detail}.svelte-1f4rfnf`
+    ).classList += " completed";
+    console.log("done");
+    console.log(event.detail, typeof event.detail);
+  }
 
   // Função para reiniciar o jogo
   function resetGame() {
@@ -64,9 +65,9 @@
             {currentPlayer}
             on:whereNext_Updated={define_whereNext}
             megaIndex={index}
+            on:gameCompleted={gameCompleted}
           />
         </div>
-        <!-- on:gameCompleted={gameCompleted} -->
       {/each}
     </div>
     <span style="position: absolute; right: 5%;">
