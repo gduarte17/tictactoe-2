@@ -37,10 +37,9 @@
 
   function gameCompleted(event) {
     console.log(event.detail, typeof event.detail);
-    let wonGame = document.querySelector(
-      `.mega-tictactoe-grid .border-${event.detail.toString()}`
-    );
+    let wonGame = document.querySelector(".mega-tictactoe-grid > .border-0");
     wonGame.classList.add("completed");
+    console.log(wonGame);
     console.log("done");
   }
 
