@@ -139,7 +139,15 @@
     border-color: #fff;
   }
 
-  .completed {
-    opacity: 0.25;
+  .inactive .cell.border-0,
+  .inactive .cell.border-1,
+  .inactive .cell.border-2,
+  .inactive .cell.border-3,
+  .inactive .cell.border-4,
+  .inactive .cell.border-5,
+  .inactive .cell.border-6,
+  .inactive .cell.border-7,
+  .inactive .cell.border-8 {
+    border-color: rgba(255, 255, 255, 0.25) !important;
   }
 </style>
