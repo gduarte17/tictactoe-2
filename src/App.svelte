@@ -63,10 +63,10 @@
           <Tictactoe
             {currentPlayer}
             on:whereNext_Updated={define_whereNext}
-            on:gameCompleted={gameCompleted}
             megaIndex={index}
           />
         </div>
+        <!-- on:gameCompleted={gameCompleted} -->
       {/each}
     </div>
     <span style="position: absolute; right: 5%;">
