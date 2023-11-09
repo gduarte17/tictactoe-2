@@ -160,7 +160,7 @@
   .inactive.border-6,
   .inactive.border-7,
   .inactive.border-8 {
-    border-top: 4px solid rgba(255, 255, 255, 0.25);
+    border-top: 4px solid rgba(255, 255, 255, 0.12);
   }
 
   .inactive.border-0,
@@ -169,7 +169,7 @@
   .inactive.border-4,
   .inactive.border-6,
   .inactive.border-7 {
-    border-right: 4px solid rgba(255, 255, 255, 0.25);
+    border-right: 4px solid rgba(255, 255, 255, 0.12);
   }
 
   .inactive.border-0,
@@ -178,7 +178,7 @@
   .inactive.border-3,
   .inactive.border-4,
   .inactive.border-5 {
-    border-bottom: 4px solid rgba(255, 255, 255, 0.25);
+    border-bottom: 4px solid rgba(255, 255, 255, 0.12);
   }
 
   .inactive.border-1,
@@ -187,7 +187,7 @@
   .inactive.border-5,
   .inactive.border-7,
   .inactive.border-8 {
-    border-left: 4px solid rgba(255, 255, 255, 0.25);
+    border-left: 4px solid rgba(255, 255, 255, 0.12);
   }
 
   /* .active {

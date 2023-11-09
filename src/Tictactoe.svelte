@@ -50,6 +50,7 @@
 
         dispatch("gameCompleted", megaIndex);
         // document.querySelector(`.game-${megaIndex}`).classList += "completed";
+        console.log(`.game-${megaIndex}`);
         document.querySelector(`.game-${megaIndex}`).innerHTML = "";
         let winnerBadge = document.createElement("p");
         winnerBadge.style.fontSize = "70px";
