@@ -115,7 +115,7 @@
 
   .tictactoe-grid {
     display: grid;
-    grid-template: 32% 32% 32% / 32% 32% 32%;
+    grid-template: 33% 34% 33% / 33% 34% 33%;
     /* gap: 5px; */
   }
 
@@ -125,7 +125,8 @@
   .border-6,
   .border-7,
   .border-8 {
-    border-top: 3px solid #fff;
+    border-top: 3px solid;
+    border-color: #fff;
   }
 
   .border-0,
@@ -134,7 +135,8 @@
   .border-4,
   .border-6,
   .border-7 {
-    border-right: 3px solid #fff;
+    border-right: 3px solid;
+    border-color: #fff;
   }
 
   .completed {
