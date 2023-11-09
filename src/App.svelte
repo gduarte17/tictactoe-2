@@ -190,16 +190,16 @@
     border-left: 4px solid rgba(255, 255, 255, 0.25);
   }
 
-  .inactive .border-0,
-  .inactive .border-1,
-  .inactive .border-2,
-  .inactive .border-3,
-  .inactive .border-4,
-  .inactive .border-5,
-  .inactive .border-6,
-  .inactive .border-7,
-  .inactive .border-8 {
-    border: 4px solid rgba(255, 255, 255, 0.25);
+  .inactive > div > div > div.cell.border-0,
+  .inactive > div > div > div.cell.border-1,
+  .inactive > div > div > div.cell.border-2,
+  .inactive > div > div > div.cell.border-3,
+  .inactive > div > div > div.cell.border-4,
+  .inactive > div > div > div.cell.border-5,
+  .inactive > div > div > div.cell.border-6,
+  .inactive > div > div > div.cell.border-7,
+  .inactive > div > div > div.cell.border-8 {
+    border-color: rgba(255, 255, 255, 0.25) !important;
   }
 
   /* .active {
