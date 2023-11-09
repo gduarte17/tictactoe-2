@@ -37,9 +37,9 @@
 
   function gameCompleted(event) {
     console.log(event.detail, typeof event.detail);
-    document.querySelector(
-      `.mega-tictactoe-grid > .border-${event.detail.toString()}`
-    ).classList += " completed";
+    document
+      .querySelector(`.mega-tictactoe-grid .border-${event.detail.toString()}`)
+      .classList.add("completed");
     console.log("done");
   }
 
