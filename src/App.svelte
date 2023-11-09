@@ -69,14 +69,15 @@
         </div>
       {/each}
     </div>
-    <p style="position: absolute; right: 5%;">
-      é a vez de <span
-        style="font-size: 70px; font-weight: 700; vertical-align: middle; padding-left: 10px; color: {currentPlayer ==
-        'X'
+    <span style="position: absolute; right: 5%;">
+      é a vez de <p
+        style="font-size: 70px; font-weight: 700; color: {currentPlayer == 'X'
           ? '#0070ff'
-          : '#ff3c3c'}">{currentPlayer}</span
+          : '#ff3c3c'}"
       >
-    </p>
+        {currentPlayer}
+      </p>
+    </span>
     {#if winner}
       <p>{winner === "Empate" ? "Empate!" : `Vencedor: ${winner}`}</p>
       <button on:click={resetGame}>Reiniciar</button>
