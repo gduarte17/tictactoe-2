@@ -154,40 +154,64 @@
     border-left: 4px solid #fff;
   }
 
-  main > div > div > div.inactive.border-3,
-  main > div > div > div.inactive.border-4,
-  main > div > div > div.inactive.border-5,
-  main > div > div > div.inactive.border-6,
-  main > div > div > div.inactive.border-7,
-  main > div > div > div.inactive.border-8 {
-    border-top: 4px solid rgba(255, 255, 255, 0.5);
+  .inactive.border-3,
+  .inactive.border-3 > *,
+  .inactive.border-4,
+  .inactive.border-4 > *,
+  .inactive.border-5,
+  .inactive.border-5 > *,
+  .inactive.border-6,
+  .inactive.border-6 > *,
+  .inactive.border-7,
+  .inactive.border-7 > *,
+  .inactive.border-8,
+  .inactive.border-8 > * {
+    border-top: 4px solid rgba(255, 255, 255, 0.25);
   }
 
-  main > div > div > div.inactive.border-0,
-  main > div > div > div.inactive.border-1,
-  main > div > div > div.inactive.border-3,
-  main > div > div > div.inactive.border-4,
-  main > div > div > div.inactive.border-6,
-  main > div > div > div.inactive.border-7 {
-    border-right: 4px solid rgba(255, 255, 255, 0.5);
+  .inactive.border-0,
+  .inactive.border-0 > *,
+  .inactive.border-1,
+  .inactive.border-1 > *,
+  .inactive.border-3,
+  .inactive.border-3 > *,
+  .inactive.border-4,
+  .inactive.border-4 > *,
+  .inactive.border-6,
+  .inactive.border-6 > *,
+  .inactive.border-7,
+  .inactive.border-7 > * {
+    border-right: 4px solid rgba(255, 255, 255, 0.25);
   }
 
-  main > div > div > div.inactive.border-0,
-  main > div > div > div.inactive.border-1,
-  main > div > div > div.inactive.border-2,
-  main > div > div > div.inactive.border-3,
-  main > div > div > div.inactive.border-4,
-  main > div > div > div.inactive.border-5 {
-    border-bottom: 4px solid rgba(255, 255, 255, 0.5);
+  .inactive.border-0,
+  .inactive.border-0 > *,
+  .inactive.border-1,
+  .inactive.border-1 > *,
+  .inactive.border-2,
+  .inactive.border-2 > *,
+  .inactive.border-3,
+  .inactive.border-3 > *,
+  .inactive.border-4,
+  .inactive.border-4 > *,
+  .inactive.border-5,
+  .inactive.border-5 > * {
+    border-bottom: 4px solid rgba(255, 255, 255, 0.25);
   }
 
-  main > div > div > div.inactive.border-1,
-  main > div > div > div.inactive.border-2,
-  main > div > div > div.inactive.border-4,
-  main > div > div > div.inactive.border-5,
-  main > div > div > div.inactive.border-7,
-  main > div > div > div.inactive.border-8 {
-    border-left: 4px solid rgba(255, 255, 255, 0.5);
+  .inactive.border-1,
+  .inactive.border-1 > *,
+  .inactive.border-2,
+  .inactive.border-2 > *,
+  .inactive.border-4,
+  .inactive.border-4 > *,
+  .inactive.border-5,
+  .inactive.border-5 > *,
+  .inactive.border-7,
+  .inactive.border-7 > *,
+  .inactive.border-8,
+  .inactive.border-8 > * {
+    border-left: 4px solid rgba(255, 255, 255, 0.25);
   }
 
   /* .active {
