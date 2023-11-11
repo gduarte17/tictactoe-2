@@ -51,7 +51,6 @@
         isActive = true;
         return isActive;
       }
-      console.log(isActive, elementIndex);
     } else if (WN_Value != "") {
       elementIndex == WN_Value ? (isActive = true) : (isActive = false);
       return isActive;
@@ -63,6 +62,85 @@
 
   function gameCompleted(event) {
     childStates[event.detail] = true;
+
+    checkWinner();
+  }
+
+  function checkWinner() {
+    const winningCombinations = [
+      [0, 1, 2],
+      [3, 4, 5],
+      [6, 7, 8], // Linhas
+      [0, 3, 6],
+      [1, 4, 7],
+      [2, 5, 8], // Colunas
+      [0, 4, 8],
+      [2, 4, 6], // Diagonais
+    ];
+
+    for (let combination of winningCombinations) {
+      const [a, b, c] = combination;
+      if (
+        childStates[a] &&
+        childStates[a] === childStates[b] &&
+        childStates[a] === childStates[c]
+      ) {
+        winner = childStates[a]; // Definir o vencedor
+
+        let topAttribute = "";
+        let rightAttribute = "";
+        let minWidthAttribute = "750px";
+        let rotateAttribute = "rotate(0deg)";
+
+        if (combination == winningCombinations[0]) {
+          topAttribute = "22%";
+        }
+        if (combination == winningCombinations[1]) {
+          topAttribute = "52%";
+        }
+        if (combination == winningCombinations[2]) {
+          topAttribute = "83%";
+        }
+
+        if (combination == winningCombinations[3]) {
+          topAttribute = "52%";
+          rightAttribute = "34.5%";
+          minWidthAttribute = "900px";
+          rotateAttribute = "rotate(90deg)";
+        }
+
+        if (combination == winningCombinations[4]) {
+          topAttribute = "52%";
+          rightAttribute = "16%";
+          minWidthAttribute = "900px";
+          rotateAttribute = "rotate(90deg)";
+        }
+        if (combination == winningCombinations[5]) {
+          topAttribute = "52%";
+          rightAttribute = "-2%";
+          minWidthAttribute = "900px";
+          rotateAttribute = "rotate(90deg)";
+        }
+
+        let winLine = document.createElement("hr");
+        winLine.classList.add("winLine");
+        winLine.style.color = "greenyellow";
+        winLine.style.backgroundColor = "greenyellow";
+        winLine.style.position = "absolute";
+        winLine.style.height = "5px";
+        winLine.style.minWidth = minWidthAttribute;
+        winLine.style.top = topAttribute;
+        winLine.style.right = rightAttribute;
+        winLine.style.transform = rotateAttribute;
+        document.querySelector(".mega-tictactoe-grid").appendChild(winLine);
+        return;
+      }
+    }
+
+    // Verifica se o tabuleiro está cheio (empate)
+    if (!childStates.includes("")) {
+      winner = "Empate";
+    }
   }
 
   // Função para reiniciar o jogo
@@ -221,6 +299,10 @@
   .inactive {
     pointer-events: none;
     /* opacity: 0.25; */
+  }
+
+  .winLine {
+    color: greenyellow;
   }
 
   /* h1 {
