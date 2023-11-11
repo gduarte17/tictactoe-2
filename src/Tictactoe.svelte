@@ -50,6 +50,7 @@
 
         // document.querySelector(`.game-${megaIndex}`).classList += "completed";
         document.querySelector(`.game-${megaIndex}`).innerHTML = "";
+
         let winnerBadge = document.createElement("p");
         winnerBadge.style.fontSize = "70px";
         winnerBadge.style.fontWeight = "700";

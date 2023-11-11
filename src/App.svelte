@@ -1,10 +1,12 @@
 <script>
+  import { is_client } from "svelte/internal";
   import Tictactoe from "./Tictactoe.svelte";
   import Title from "./Title.svelte";
 
   //   export let name;
 
   let board = Array(9); //.fill(TicTacToe); // Representa o estado do tabuleiro
+  let childStates = Array(board.length).fill(false);
   let currentPlayer = "X"; // Inicia com o jogador X
   let whereNext = "";
   let isActive = true;
@@ -18,7 +20,18 @@
    * @param {{ detail: any; }} event
    */
   function define_whereNext(event) {
-    whereNext = event.detail;
+    console.log("called");
+    if (
+      document
+        .querySelector(`.mega-tictactoe-grid > .border-${event.detail}`)
+        .classList.contains("completed")
+    ) {
+      whereNext = "not-completed";
+      console.log(whereNext);
+    } else {
+      whereNext = event.detail;
+    }
+
     currentPlayer = currentPlayer === "X" ? "O" : "X";
   }
   /**
@@ -26,7 +39,20 @@
    * @param {string} WN_Value
    */
   function define_isActive(WN_Value, elementIndex) {
-    if (WN_Value != "") {
+    if (WN_Value == "not-completed") {
+      if (
+        document
+          .querySelector(`.mega-tictactoe-grid > .border-${elementIndex}`)
+          .classList.contains("completed")
+      ) {
+        isActive = false;
+        return isActive;
+      } else {
+        isActive = true;
+        return isActive;
+      }
+      console.log(isActive, elementIndex);
+    } else if (WN_Value != "") {
       elementIndex == WN_Value ? (isActive = true) : (isActive = false);
       return isActive;
     } else if (WN_Value == "") {
@@ -36,11 +62,7 @@
   }
 
   function gameCompleted(event) {
-    console.log(event.detail, typeof event.detail);
-    let wonGame = document.querySelector(".mega-tictactoe-grid > .border-0");
-    wonGame.classList.add("completed");
-    console.log(wonGame);
-    console.log("done");
+    childStates[event.detail] = true;
   }
 
   // Função para reiniciar o jogo
@@ -55,8 +77,9 @@
   <Title />
   <div class="mega-game">
     <div class="mega-tictactoe-grid">
-      {#each board as ticGame, index}
+      {#each childStates as state, index}
         <div
+          class:completed={state}
           class="{define_isActive(whereNext, index.toString())
             ? 'active'
             : 'inactive'} border-{index}"
